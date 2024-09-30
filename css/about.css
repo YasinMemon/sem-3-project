@@ -1,0 +1,194 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)), #468DB4;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Align items in a column */
+}
+
+/* Navigation styles */
+nav {
+    background: linear-gradient(135deg, #333, #444); /* Gradient background */
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Center and space items */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 20px; /* Spacing around links */
+    font-size: 1.2em; /* Font size for links */
+    transition: color 0.3s, transform 0.2s; /* Smooth transition for effects */
+}
+
+nav ul li a:hover {
+    color: #FF7F0E; /* Change color on hover */
+    transform: scale(1.1); /* Slight scale effect */
+}
+
+nav ul li a.active {
+    font-weight: bold; /* Bold for active link */
+    border-bottom: 2px solid #FF7F0E; /* Underline for active link */
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding for fixed nav */
+    flex: 1; /* Allow container to grow and take available space */
+}
+
+h1 {
+    font-size: 2.5em; /* Heading size */
+    margin-bottom: 20px; /* Spacing below heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+p {
+    font-size: 1.2em; /* Paragraph size */
+    margin-bottom: 40px; /* Spacing below paragraph */
+}
+
+/* Form styles (only for contact.css) */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center form elements */
+    gap: 20px; /* Space between inputs */
+    max-width: 600px; /* Limit form width for larger screens */
+    margin: 0 auto; /* Center form horizontally */
+}
+
+input, textarea {
+    padding: 15px; /* Padding for inputs */
+    margin-bottom: 10px; /* Spacing below inputs */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners for inputs */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit width on larger screens */
+    transition: border 0.3s; /* Smooth border transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+input:focus, textarea:focus {
+    outline: none; /* Remove outline */
+    border: 2px solid #FF7F0E; /* Highlight border on focus */
+}
+
+/* Textarea styles */
+textarea {
+    height: 120px; /* Increased height for more space */
+}
+
+/* Button styles */
+.create-button {
+    background-color: #FF7F0E; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for button */
+    text-transform: uppercase; /* Uppercase text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1em; /* Font size for button */
+    transition: background-color 0.3s, transform 0.2s; /* Animation on hover */
+}
+
+.create-button:hover {
+    background-color: #FF6F00; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+    width: 100%; /* Full width */
+}
+
+/* Footer content styles */
+.footer {
+    padding: 10px; /* Padding for footer content */
+}
+
+.footer a {
+    color: #FF7F0E; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    color: #FF6F00; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .container {
+        padding: 60px 20px; /* Less padding on small screens */
+    }
+
+    .create-button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 0.9em; /* Smaller button text */
+    }
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px; /* Limit max width */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Block-level element */
+}
+
+.team {
+    display: flex;
+    justify-content: center; /* Center team members */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between members */
+}
+
+.team-member {
+    text-align: center; /* Center text */
+}
+
+.team-photo {
+    width: 150px; /* Set width for team photos */
+    height: 150px; /* Set height for uniformity */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Cover the area */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer a {
+    color: #FF7F0E;
+    text-decoration: none;
+    padding: 0 10px;
+}
+

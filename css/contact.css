@@ -1,0 +1,139 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)), #468DB4;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Center and space items */
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #FF7F0E; /* Hover color */
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #FF7F0E; /* Active page underline */
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding for fixed nav */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make form take full width */
+    max-width: 600px; /* Restrict form width */
+    margin: 0 auto; /* Center the form */
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px; /* Limit input width */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fff;
+    color: #333;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button.create-button {
+    background-color: #FF7F0E;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.create-button:hover {
+    background-color: #FF6F00;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: bottom;
+    width: 100vw;
+    bottom: 0;
+}
+
+.footer a {
+    color: #FF7F0E;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FF6F00;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 60px 20px;
+    }
+
+    form {
+        width: 90%; /* Ensure form adapts to smaller screens */
+    }
+}

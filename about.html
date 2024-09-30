@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Blog Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <ul class="flex space-x-6">
+                <li><a href="index.php" class="text-gray-700 hover:text-blue-500 font-semibold">Home</a></li>
+                <li><a href="about.html" class="text-blue-500 hover:text-blue-500 font-semibold">About</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a></li>
+                <li><a href="blogs.php" class="text-gray-700 hover:text-blue-500 font-semibold">Blogs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-semibold text-gray-800 mb-4">About Us</h1>
+        <p class="text-lg text-gray-600 mb-8">We are a platform designed to make blogging accessible to everyone. Our mission is to help individuals express their thoughts, passions, and stories in an easy and creative way.</p>
+
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Story</h2>
+        <p class="text-lg text-gray-600 mb-6">Founded in 2020, we started as a small project aimed at empowering voices from diverse backgrounds.</p>
+        <img src="./images/6.png" alt="Our Story" class="w-full h-auto rounded-lg shadow-lg mb-12">
+
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Meet the Team</h2>
+        
+        <!-- Team Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="team-member bg-white p-6 rounded-lg shadow-md">
+                <img src="./images/anas.jpg" alt="Anas" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Anas</h3>
+                <p class="text-center text-gray-600">Manages styling and content writing, bringing a creative flair to our platform.</p>
+            </div>
+
+            <div class="team-member bg-white p-6 rounded-lg shadow-md">
+                <img src="./images/5.png" alt="Huzefa" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Huzefa</h3>
+                <p class="text-center text-gray-600">Ensures our platform is responsive and visually appealing.</p>
+            </div>
+
+            <div class="team-member bg-white p-6 rounded-lg shadow-md">
+                <img src="https://media.licdn.com/dms/image/D4D03AQEFxFdbS1EbUQ/profile-displayphoto-shrink_400_400/0/1718640556495?e=2147483647&v=beta&t=2dk-rw6MmBEEFD3q6u0tqNDIxVUirBHnbU6iSp3t0lk"
+                     alt="Yasin" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Yasin</h3>
+                <p class="text-center text-gray-600">Main leader managing the logic and integrating new tech ideas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Blog Platform | <a href="#" class="underline hover:text-blue-400">Privacy Policy</a> | <a href="#" class="underline hover:text-blue-400">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
